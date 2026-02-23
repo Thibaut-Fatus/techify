@@ -165,37 +165,37 @@ const en: Translations = {
   submitProject: "Submit Project",
 
   // Hero section
-  heroTitle1: "Transforming Business Challenges Into",
-  heroTitle2: "Shared Opportunities",
+  heroTitle1: "AI-Powered Tools for",
+  heroTitle2: "Small Businesses That Need Them Most",
   heroSubtitle:
-    "We develop custom tech solutions for small & local European businesses and share the revenue when deployed to others with similar needs.",
+    "Small businesses often know exactly what tools they need but lack the time, budget, or technical know-how to build them. With AI, we change that — delivering custom solutions faster and more affordably than ever, and sharing the revenue when they help others too.",
   learnMore: "Learn More",
 
   // How it works section
   howItWorks: "How It Works",
   howItWorksSubtitle:
-    "Our collaborative approach to creating sustainable technology solutions",
+    "AI has transformed what's possible — here's how we put it to work for your business",
   submitChallenge: "Submit Your Challenge",
   submitChallengeDesc:
-    "Share your business pain point with our team through a simple submission process.",
+    "Tell us about the tool or process your business needs. No technical knowledge required — just describe the problem.",
   validationSelection: "Validation & Selection",
   validationSelectionDesc:
-    "Our experts evaluate the potential for wider application and select promising challenges.",
-  development: "Collaborative Development",
+    "We assess how AI can best solve your challenge and evaluate its potential to help similar businesses.",
+  development: "AI-Accelerated Development",
   developmentDesc:
-    "We build a solution tailored for your business with ongoing feedback and testing.",
+    "Using AI-accelerated development, we build a tailored solution in weeks instead of months, with your feedback at every step.",
   scaleShareRevenue: "Scale & Share Revenue",
   scaleShareRevenueDesc:
-    "Your solution is offered to other businesses, generating ongoing revenue for all partners.",
+    "Your solution is offered to other businesses facing the same challenge, generating ongoing revenue for all partners.",
 
   // Benefits section
   benefits: "Benefits",
   benefitsSubtitle:
-    "Why small businesses across Europe choose to partner with us",
+    "AI has leveled the playing field — here's what it means for your business",
   affordableSolutions: "Affordable Solutions",
   affordableSolutionsDesc:
-    "Get custom technology at a fraction of the typical development cost through our shared model.",
-  save: "Save 60%+",
+    "AI-driven development slashes costs dramatically. Get tools that used to require expensive agencies, at a fraction of the price.",
+  save: "Save 70%+",
   europeanSovereignty: "European Sovereignty",
   europeanSovereigntyDesc:
     "All data and infrastructure remains under European jurisdiction and control.",
@@ -206,7 +206,7 @@ const en: Translations = {
   profitShare: "Profit Share",
   bespokeDevelopment: "Bespoke Development",
   bespokeDevelopmentDesc:
-    "Solutions built specifically for your exact business needs and workflows.",
+    "No more one-size-fits-all. AI lets us build solutions tailored to your exact workflows — without the enterprise price tag.",
   customBuilt: "Custom Built",
 
   // Projects section
@@ -225,7 +225,7 @@ const en: Translations = {
     "We evaluate submissions based on the specificity of the challenge, the potential for wider application across similar businesses, and technical feasibility. We look for challenges that, when solved, could benefit multiple businesses in the same sector.",
   faqQuestion2: "How much does it cost to submit a challenge?",
   faqAnswer2:
-    "Submission is completely free. If your challenge is selected, we'll discuss a cost-sharing model that's significantly lower than traditional custom development.",
+    "Submission is completely free. Because AI dramatically reduces development time and cost, our shared model is even more affordable than traditional custom development.",
   faqQuestion5: "Who owns the intellectual property of the solution?",
   faqAnswer5:
     "Techify retains the IP of the core solution, but you receive a perpetual license to use it. This allows us to offer the solution to other businesses while ensuring you always have access.",
@@ -234,7 +234,7 @@ const en: Translations = {
     "Revenue sharing typically represents 25 to 50% of the margin from subscription fees paid by future clients using the solution developed from your project. The exact percentage depends on the complexity and the distribution model adopted.",
   faqQuestion4: "How long does the development process take?",
   faqAnswer4:
-    "Development timelines vary based on complexity, but most solutions reach initial deployment within 2-4 months. We follow an agile methodology with regular updates and testing milestones.",
+    "Thanks to AI-accelerated development, most solutions reach initial deployment within 4-8 weeks — significantly faster than traditional development cycles. We follow an agile methodology with regular updates and testing milestones.",
   faqQuestion6: "What happens if my needs change after development?",
   faqAnswer6:
     "We build flexibility into our solutions. Minor adjustments are included in your service agreement, while major changes may be evaluated as enhancement requests that could benefit all users.",
@@ -249,12 +249,12 @@ const en: Translations = {
     "Building European digital sovereignty through collaborative innovation",
   ourStoryTitle: "Our Story",
   ourStoryContent1:
-    "Founded in 2024 by a team of European tech leaders, Techify was born from a simple observation: small businesses face similar technology challenges but lack affordable solutions.",
+    "Founded in 2024, Techify was born from a simple observation: AI has made it possible to build powerful, custom software faster and cheaper than ever — yet small businesses, the ones who need it most, are being left behind.",
   ourStoryContent2:
-    "We created a model where businesses could pool resources to develop technology that works for everyone while keeping data and infrastructure under European control.",
+    "We created a model that puts AI to work for small businesses: delivering the tools they need without requiring technical expertise, and building a shared ecosystem where one business's solution can help many others.",
   ourMissionTitle: "Our Mission",
   ourMissionContent:
-    "We aim to democratize access to custom technology solutions for small businesses while creating a sustainable ecosystem where innovation benefits all participants.",
+    "We harness the power of AI to democratize access to custom technology. Small businesses shouldn't need a CTO or a six-figure budget to get the tools they deserve. We build them fast, we build them right, and we share the value.",
   ourValuesTitle: "Our Core Values",
   value1Title: "European Sovereignty",
   value1Content:
@@ -314,7 +314,7 @@ const en: Translations = {
   // Submission
   submissionTitle: "Submit Your Challenge",
   submissionSubtitle:
-    "Share your business pain point with us. If selected, we'll develop a solution at minimal cost and split the revenue when it's marketed to others.",
+    "You know your business better than anyone. Tell us what tool or process you wish you had — no technical expertise needed. If selected, we'll use AI to build it fast and affordably, and share the revenue when others benefit from it too.",
   submissionFormTitle: "Challenge Submission Form",
   submissionFormSubtitle:
     "Tell us about your business and the problem you'd like solved.",
@@ -341,7 +341,7 @@ const en: Translations = {
 
   // Footer
   footerTagline:
-    "Transforming small business challenges into revenues opportunities.",
+    "AI-powered tools for small businesses — built fast, priced fair.",
   footerLinkTitle: "Quick Links",
   footerProjects: "Projects",
   footerSubmit: "Submit Project",
@@ -360,37 +360,37 @@ const fr: Translations = {
   submitProject: "Soumettre un projet",
 
   // Hero section
-  heroTitle1: "Transformer les défis des entreprises en",
-  heroTitle2: "opportunités partagées",
+  heroTitle1: "Des outils dopés à l'IA pour les",
+  heroTitle2: "petites entreprises qui en ont le plus besoin",
   heroSubtitle:
-    "Nous créons des outils sur mesure pour les petites entreprises locales et partageons les revenus lorsqu'ils sont adoptés par d'autres entreprises ayant des besoins similaires.",
+    "Les petites entreprises savent souvent exactement de quels outils elles ont besoin, mais manquent de temps, de budget ou de savoir-faire technique pour les créer. Grâce à l'IA, nous changeons la donne — en livrant des solutions sur mesure plus vite et à moindre coût, et en partageant les revenus quand elles profitent à d'autres.",
   learnMore: "En savoir plus",
 
   // How it works section
   howItWorks: "Comment ça marche",
   howItWorksSubtitle:
-    "Notre approche collaborative pour créer des solutions technologiques durables",
+    "L'IA a transformé le champ des possibles — voici comment nous la mettons au service de votre entreprise",
   submitChallenge: "Soumettez votre projet",
   submitChallengeDesc:
-    "Partagez le problème de votre entreprise avec notre équipe via un processus de soumission simple.",
+    "Décrivez l'outil ou le processus dont votre entreprise a besoin. Aucune compétence technique requise — décrivez simplement le problème.",
   validationSelection: "Validation et sélection",
   validationSelectionDesc:
-    "Nos experts évaluent le potentiel d'application plus large et sélectionnent les projets prometteurs.",
-  development: "Développement collaboratif",
+    "Nous évaluons comment l'IA peut résoudre au mieux votre défi et son potentiel pour aider des entreprises similaires.",
+  development: "Développement accéléré par l'IA",
   developmentDesc:
-    "Nous construisons une solution adaptée à votre entreprise avec des retours et des tests continus.",
+    "Grâce au développement accéléré par l'IA, nous construisons une solution adaptée en semaines au lieu de mois, avec vos retours à chaque étape.",
   scaleShareRevenue: "Mise à l'échelle et partage des revenus",
   scaleShareRevenueDesc:
-    "Votre solution est proposée à d'autres entreprises, générant des revenus continus pour tous les partenaires.",
+    "Votre solution est proposée à d'autres entreprises confrontées au même défi, générant des revenus continus pour tous les partenaires.",
 
   // Benefits section
   benefits: "Avantages",
   benefitsSubtitle:
-    "Pourquoi les petites entreprises choisissent de s'associer à nous",
+    "L'IA a changé les règles du jeu — voici ce que cela signifie pour votre entreprise",
   affordableSolutions: "Solutions abordables",
   affordableSolutionsDesc:
-    "Obtenez une technologie personnalisée à une fraction du coût de développement typique grâce à notre modèle partagé.",
-  save: "Économisez 60%+",
+    "Le développement piloté par l'IA réduit drastiquement les coûts. Obtenez des outils qui nécessitaient auparavant des agences coûteuses, à une fraction du prix.",
+  save: "Économisez 70%+",
   europeanSovereignty: "Souveraineté européenne",
   europeanSovereigntyDesc:
     "Toutes les données et infrastructures restent sous juridiction et contrôle européens.",
@@ -401,8 +401,8 @@ const fr: Translations = {
   profitShare: "Partage des bénéfices",
   bespokeDevelopment: "Développement sur mesure",
   bespokeDevelopmentDesc:
-    "Solutions construites spécifiquement pour vos besoins et flux de travail exacts.",
-  customBuilt: "Construction personnalisée",
+    "Fini le prêt-à-porter. L'IA nous permet de construire des solutions adaptées à vos processus exacts — sans le prix des grandes entreprises.",
+  customBuilt: "Sur mesure",
 
   // Projects section
   featuredProjects: "Projets en vedette",
@@ -420,13 +420,13 @@ const fr: Translations = {
     "Nous évaluons les soumissions en fonction de la spécificité du projet, du potentiel d'application plus large à des entreprises similaires et de la faisabilité technique. Nous recherchons des défis qui, une fois résolus, pourraient bénéficier à plusieurs entreprises du même secteur.",
   faqQuestion2: "Combien coûte la soumission d'un projet ?",
   faqAnswer2:
-    "La soumission est entièrement gratuite. Si votre projet est sélectionné, nous discuterons d'un modèle de partage des coûts significativement inférieur au développement personnalisé traditionnel.",
+    "La soumission est entièrement gratuite. Parce que l'IA réduit considérablement le temps et le coût de développement, notre modèle partagé est encore plus abordable que le développement sur mesure traditionnel.",
   faqQuestion3: "Comment le partage des revenus est-il calculé ?",
   faqAnswer3:
     "Le partage des revenus représente généralement 25 à 50 % de la marge issue des frais d'abonnement payés par les futurs clients utilisant la solution développée à partir de votre projet. Le pourcentage exact dépend de la complexité et du modèle de distribution adopté.",
   faqQuestion4: "Combien de temps dure le processus de développement ?",
   faqAnswer4:
-    "Les délais de développement varient en fonction de la complexité, mais la plupart des solutions atteignent le déploiement initial dans un délai de 2 à 4 mois. Nous suivons une méthodologie agile avec des mises à jour régulières et des étapes de test.",
+    "Grâce au développement accéléré par l'IA, la plupart des solutions atteignent le déploiement initial en 4 à 8 semaines — bien plus rapidement que les cycles de développement traditionnels. Nous suivons une méthodologie agile avec des mises à jour régulières et des étapes de test.",
   faqQuestion5: "Qui possède la propriété intellectuelle de la solution ?",
   faqAnswer5:
     "Techify conserve la propriété intellectuelle de la solution de base, mais vous recevez une licence perpétuelle pour l'utiliser. Cela nous permet de proposer la solution à d'autres entreprises tout en vous garantissant un accès permanent.",
@@ -445,12 +445,12 @@ const fr: Translations = {
     "Construire la souveraineté numérique européenne par l'innovation collaborative",
   ourStoryTitle: "Notre Histoire",
   ourStoryContent1:
-    "Fondée en 2024 par une équipe de leaders technologiques européens, Techify est née d'une simple observation : les petites entreprises font face à des défis technologiques similaires mais manquent de solutions abordables.",
+    "Fondée en 2024, Techify est née d'une simple observation : l'IA permet désormais de créer des logiciels puissants et sur mesure plus vite et à moindre coût que jamais — pourtant les petites entreprises, celles qui en ont le plus besoin, restent en marge.",
   ourStoryContent2:
-    "Nous avons créé un modèle où les entreprises peuvent mettre en commun leurs ressources pour développer une technologie qui fonctionne pour tous tout en gardant les données et l'infrastructure sous contrôle européen.",
+    "Nous avons créé un modèle qui met l'IA au service des petites entreprises : leur offrir les outils dont elles ont besoin sans exiger d'expertise technique, et créer un écosystème partagé où la solution d'une entreprise peut en aider beaucoup d'autres.",
   ourMissionTitle: "Notre Mission",
   ourMissionContent:
-    "Nous visons à démocratiser l'accès aux solutions technologiques personnalisées pour les petites entreprises tout en créant un écosystème durable où l'innovation profite à tous les participants.",
+    "Nous exploitons la puissance de l'IA pour démocratiser l'accès à la technologie sur mesure. Les petites entreprises ne devraient pas avoir besoin d'un directeur technique ou d'un budget à six chiffres pour obtenir les outils qu'elles méritent. Nous les construisons vite, nous les construisons bien, et nous partageons la valeur.",
   ourValuesTitle: "Nos Valeurs Fondamentales",
   value1Title: "Souveraineté européenne",
   value1Content:
@@ -510,7 +510,7 @@ const fr: Translations = {
   // Submission
   submissionTitle: "Soumettez Votre Projet",
   submissionSubtitle:
-    "Partagez avec nous les difficultés de votre entreprise. Si votre projet est sélectionné, nous développerons une solution à coût minimal et partagerons les revenus lors de sa commercialisation auprès d'autres entreprises.",
+    "Vous connaissez votre entreprise mieux que personne. Dites-nous quel outil ou processus vous aimeriez avoir — aucune expertise technique requise. Si sélectionné, nous utiliserons l'IA pour le construire rapidement et à moindre coût, et partagerons les revenus quand d'autres en bénéficieront aussi.",
   submissionFormTitle: "Formulaire de Soumission",
   submissionFormSubtitle:
     "Parlez-nous de votre entreprise et du problème que vous souhaitez résoudre.",
@@ -537,7 +537,7 @@ const fr: Translations = {
 
   // Footer
   footerTagline:
-    "Transformer les défis des petites entreprises en opportunités de revenus.",
+    "Des outils dopés à l'IA pour les petites entreprises — construits vite, au juste prix.",
   footerLinkTitle: "Liens rapides",
   footerProjects: "Projets",
   footerSubmit: "Soumettre un projet",
@@ -556,37 +556,37 @@ const de: Translations = {
   submitProject: "Projekt einreichen",
 
   // Hero section
-  heroTitle1: "Geschäftsherausforderungen in",
-  heroTitle2: "gemeinsame Chancen verwandeln",
+  heroTitle1: "KI-gestützte Tools für",
+  heroTitle2: "kleine Unternehmen, die sie am meisten brauchen",
   heroSubtitle:
-    "Wir entwickeln maßgeschneiderte Technologielösungen für kleine europäische Unternehmen und teilen die Einnahmen, wenn sie für andere mit ähnlichen Bedürfnissen eingesetzt werden.",
+    "Kleine Unternehmen wissen oft genau, welche Tools sie brauchen — aber es fehlt an Zeit, Budget oder technischem Know-how. Mit KI ändern wir das: maßgeschneiderte Lösungen, schneller und günstiger als je zuvor, mit geteilten Einnahmen, wenn andere davon profitieren.",
   learnMore: "Mehr erfahren",
 
   // How it works section
   howItWorks: "Wie es funktioniert",
   howItWorksSubtitle:
-    "Unser kollaborativer Ansatz zur Schaffung nachhaltiger Technologielösungen",
+    "KI hat die Möglichkeiten transformiert — so setzen wir sie für Ihr Unternehmen ein",
   submitChallenge: "Reichen Sie Ihre Herausforderung ein",
   submitChallengeDesc:
-    "Teilen Sie das Problem Ihres Unternehmens durch einen einfachen Einreichungsprozess mit unserem Team.",
+    "Beschreiben Sie das Tool oder den Prozess, den Ihr Unternehmen braucht. Kein technisches Wissen erforderlich — beschreiben Sie einfach das Problem.",
   validationSelection: "Validierung & Auswahl",
   validationSelectionDesc:
-    "Unsere Experten bewerten das Potenzial für eine breitere Anwendung und wählen vielversprechende Herausforderungen aus.",
-  development: "Gemeinsame Entwicklung",
+    "Wir bewerten, wie KI Ihre Herausforderung am besten lösen kann und welches Potenzial für ähnliche Unternehmen besteht.",
+  development: "KI-beschleunigte Entwicklung",
   developmentDesc:
-    "Wir entwickeln eine auf Ihr Unternehmen zugeschnittene Lösung mit laufendem Feedback und Tests.",
+    "Mit KI-beschleunigter Entwicklung bauen wir eine maßgeschneiderte Lösung in Wochen statt Monaten, mit Ihrem Feedback bei jedem Schritt.",
   scaleShareRevenue: "Skalieren & Einnahmen teilen",
   scaleShareRevenueDesc:
-    "Ihre Lösung wird anderen Unternehmen angeboten und generiert laufende Einnahmen für alle Partner.",
+    "Ihre Lösung wird anderen Unternehmen mit der gleichen Herausforderung angeboten und generiert laufende Einnahmen für alle Partner.",
 
   // Benefits section
   benefits: "Vorteile",
   benefitsSubtitle:
-    "Warum kleine Unternehmen in ganz Europa sich für eine Partnerschaft mit uns entscheiden",
+    "KI hat das Spielfeld geebnet — das bedeutet es für Ihr Unternehmen",
   affordableSolutions: "Erschwingliche Lösungen",
   affordableSolutionsDesc:
-    "Erhalten Sie maßgeschneiderte Technologie zu einem Bruchteil der typischen Entwicklungskosten durch unser gemeinsames Modell.",
-  save: "Sparen Sie 60%+",
+    "KI-gestützte Entwicklung senkt die Kosten drastisch. Erhalten Sie Tools, die früher teure Agenturen erforderten, zu einem Bruchteil des Preises.",
+  save: "Sparen Sie 70%+",
   europeanSovereignty: "Europäische Souveränität",
   europeanSovereigntyDesc:
     "Alle Daten und Infrastrukturen bleiben unter europäischer Gerichtsbarkeit und Kontrolle.",
@@ -597,8 +597,8 @@ const de: Translations = {
   profitShare: "Gewinnbeteiligung",
   bespokeDevelopment: "Maßgeschneiderte Entwicklung",
   bespokeDevelopmentDesc:
-    "Lösungen, die speziell für Ihre genauen Geschäftsanforderungen und Arbeitsabläufe entwickelt wurden.",
-  customBuilt: "Individuell gebaut",
+    "Schluss mit Einheitslösungen. KI ermöglicht es uns, Lösungen für Ihre exakten Arbeitsabläufe zu bauen — ohne Enterprise-Preise.",
+  customBuilt: "Maßgeschneidert",
 
   // Projects section
   featuredProjects: "Ausgewählte Projekte",
@@ -616,7 +616,7 @@ const de: Translations = {
     "Wir bewerten Einreichungen basierend auf der Spezifität der Herausforderung, dem Potenzial für eine breitere Anwendung in ähnlichen Unternehmen und der technischen Machbarkeit. Wir suchen nach Herausforderungen, die, wenn sie gelöst werden, mehreren Unternehmen im selben Sektor zugute kommen könnten.",
   faqQuestion2: "Wie viel kostet es, eine Herausforderung einzureichen?",
   faqAnswer2:
-    "Die Einreichung ist völlig kostenlos. Wenn Ihre Herausforderung ausgewählt wird, werden wir ein Kostenteilungsmodell besprechen, das deutlich niedriger ist als bei traditioneller kundenspezifischer Entwicklung.",
+    "Die Einreichung ist völlig kostenlos. Da KI Entwicklungszeit und -kosten drastisch reduziert, ist unser geteiltes Modell noch günstiger als traditionelle kundenspezifische Entwicklung.",
   faqQuestion5: "Wer besitzt das geistige Eigentum an der Lösung?",
   faqAnswer5:
     "Techify behält das geistige Eigentum an der Kernlösung, aber Sie erhalten eine unbefristete Lizenz zur Nutzung. Dies ermöglicht es uns, die Lösung anderen Unternehmen anzubieten und gleichzeitig sicherzustellen, dass Sie immer Zugriff haben.",
@@ -625,7 +625,7 @@ const de: Translations = {
     "Die Umsatzbeteiligung beträgt in der Regel 25 bis 50 % der Marge aus den Abonnementgebühren, die von zukünftigen Kunden gezahlt werden, die die aus Ihrem Projekt entwickelte Lösung nutzen. Der genaue Prozentsatz hängt von der Komplexität und dem gewählten Vertriebsmodell ab.",
   faqQuestion4: "Wie lange dauert der Entwicklungsprozess?",
   faqAnswer4:
-    "Die Entwicklungszeiträume variieren je nach Komplexität, aber die meisten Lösungen erreichen die erste Bereitstellung innerhalb von 2-4 Monaten. Wir folgen einer agilen Methodik mit regelmäßigen Updates und Testmeilensteinen.",
+    "Dank KI-beschleunigter Entwicklung erreichen die meisten Lösungen die erste Bereitstellung innerhalb von 4-8 Wochen — deutlich schneller als traditionelle Entwicklungszyklen. Wir folgen einer agilen Methodik mit regelmäßigen Updates und Testmeilensteinen.",
   faqQuestion6:
     "Was passiert, wenn sich meine Bedürfnisse nach der Entwicklung ändern?",
   faqAnswer6:
@@ -641,12 +641,12 @@ const de: Translations = {
     "Aufbau europäischer digitaler Souveränität durch kollaborative Innovation",
   ourStoryTitle: "Unsere Geschichte",
   ourStoryContent1:
-    "Gegründet im Jahr 2024 von einem Team europäischer Technologieführer, entstand Techify aus einer einfachen Beobachtung: kleine Unternehmen in ganz Europa stehen vor ähnlichen technologischen Herausforderungen, aber es fehlt an erschwinglichen, auf Souveränität ausgerichteten Lösungen.",
+    "Gegründet im Jahr 2024, entstand Techify aus einer einfachen Beobachtung: KI ermöglicht es heute, leistungsstarke, maßgeschneiderte Software schneller und günstiger als je zuvor zu entwickeln — doch kleine Unternehmen, die sie am meisten brauchen, werden zurückgelassen.",
   ourStoryContent2:
-    "Wir haben ein Modell geschaffen, bei dem Unternehmen Ressourcen bündeln können, um Technologie zu entwickeln, die für alle funktioniert und gleichzeitig Daten und Infrastruktur unter europäischer Kontrolle hält.",
+    "Wir haben ein Modell geschaffen, das KI für kleine Unternehmen nutzbar macht: die Tools liefern, die sie brauchen, ohne technische Expertise vorauszusetzen, und ein gemeinsames Ökosystem schaffen, in dem die Lösung eines Unternehmens vielen anderen helfen kann.",
   ourMissionTitle: "Unsere Mission",
   ourMissionContent:
-    "Unser Ziel ist es, den Zugang zu maßgeschneiderten Technologielösungen für europäische Kleinunternehmen zu demokratisieren, gleichzeitig die digitale Souveränität aufzubauen und ein nachhaltiges Ökosystem zu schaffen, in dem Innovation allen Teilnehmern zugute kommt.",
+    "Wir nutzen die Kraft der KI, um den Zugang zu maßgeschneiderter Technologie zu demokratisieren. Kleine Unternehmen sollten keinen CTO oder ein sechsstelliges Budget brauchen, um die Tools zu bekommen, die sie verdienen. Wir bauen sie schnell, wir bauen sie richtig, und wir teilen den Wert.",
   ourValuesTitle: "Unsere Kernwerte",
   value1Title: "Europäische Souveränität",
   value1Content:
@@ -705,7 +705,7 @@ const de: Translations = {
   // Submission
   submissionTitle: "Herausforderung Einreichen",
   submissionSubtitle:
-    "Teilen Sie uns Ihre geschäftlichen Probleme mit. Wenn Ihr Projekt ausgewählt wird, entwickeln wir eine Lösung zu minimalen Kosten und teilen die Einnahmen, wenn sie anderen vermarktet wird.",
+    "Sie kennen Ihr Unternehmen am besten. Sagen Sie uns, welches Tool oder welchen Prozess Sie sich wünschen — kein technisches Fachwissen nötig. Bei Auswahl nutzen wir KI, um es schnell und günstig zu bauen, und teilen die Einnahmen, wenn auch andere davon profitieren.",
   submissionFormTitle: "Herausforderungs-Einreichungsformular",
   submissionFormSubtitle:
     "Erzählen Sie uns von Ihrem Unternehmen und dem Problem, das Sie lösen möchten.",
@@ -732,7 +732,7 @@ const de: Translations = {
 
   // Footer
   footerTagline:
-    "Kleine Unternehmensherausforderungen in Umsatzchancen verwandeln.",
+    "KI-gestützte Tools für kleine Unternehmen — schnell gebaut, fair bepreist.",
   footerLinkTitle: "Schnelllinks",
   footerProjects: "Projekte",
   footerSubmit: "Projekt einreichen",
