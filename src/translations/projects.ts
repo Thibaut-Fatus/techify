@@ -23,6 +23,12 @@ const en: Record<number, ProjectDescriptionTranslation> = {
       "Able is the platform for all capital transactions. It enables stakeholders to manage shareholders, interact with PE funds, process legal documentation, simulate proceeds and waterfalls, and keep cap tables and share ledgers up to date. Built by private markets leaders, Able turns complexity into clarity and data into dialogue.",
     category: "Fintech",
   },
+  4: {
+    title: "TOTEM",
+    description:
+      "We built TOTEM's entire warehouse management system: catalog management, demand prediction and purchasing, supplier management, order preparation and delivery logistics. The platform powers 70 automated micro stores in workplaces where employees can buy daily essentials — fresh food, fruits, snacks, beverages, and health products. It includes a backoffice for the warehouse team, a native app for supply chain, preparation and store resupply, and a native payment app for employees.",
+    category: "Logistics & Retail",
+  },
 };
 
 const fr: Record<number, ProjectDescriptionTranslation> = {
@@ -44,6 +50,12 @@ const fr: Record<number, ProjectDescriptionTranslation> = {
       "Able est la plateforme dédiée à toutes les opérations en capital. Elle permet aux parties prenantes de gérer les actionnaires, d'interagir avec les fonds de private equity, de traiter la documentation juridique, de simuler les produits et les cascades de distribution, et de maintenir à jour les tables de capitalisation et les registres d'actions. Conçue par des experts des marchés privés, Able transforme la complexité en clarté et les données en dialogue.",
     category: "Fintech",
   },
+  4: {
+    title: "TOTEM",
+    description:
+      "Nous avons construit l'ensemble du système de gestion d'entrepôt de TOTEM : gestion du catalogue, prédiction de la demande et achats, gestion des fournisseurs, préparation des commandes et logistique de livraison. La plateforme alimente 70 micro magasins automatisés dans les entreprises où les collaborateurs peuvent acheter leurs produits du quotidien — frais, fruits, snacks, boissons et produits d'hygiène. Elle comprend un backoffice pour l'équipe entrepôt, une application native pour la supply chain, la préparation et le réapprovisionnement des magasins, et une application native de paiement pour les collaborateurs.",
+    category: "Logistique & Retail",
+  },
 };
 
 const de: Record<number, ProjectDescriptionTranslation> = {
@@ -64,6 +76,12 @@ const de: Record<number, ProjectDescriptionTranslation> = {
     description:
       "Able ist die Plattform für alle Kapitaltransaktionen. Sie ermöglicht es Stakeholdern, Gesellschafter zu verwalten, mit Private-Equity-Fonds zu interagieren, rechtliche Dokumentation zu bearbeiten, Erlöse und Wasserfälle zu simulieren sowie Cap Tables und Aktienregister aktuell zu halten. Von Experten der privaten Märkte entwickelt, verwandelt Able Komplexität in Klarheit und Daten in Dialog.",
     category: "Fintech",
+  },
+  4: {
+    title: "TOTEM",
+    description:
+      "Wir haben das gesamte Lagerverwaltungssystem von TOTEM entwickelt: Katalogverwaltung, Bedarfsprognose und Einkauf, Lieferantenmanagement, Auftragsabwicklung und Lieferlogistik. Die Plattform betreibt 70 automatisierte Micro Stores in Unternehmen, in denen Mitarbeitende täglich benötigte Produkte kaufen können — Frischware, Obst, Snacks, Getränke und Gesundheitsprodukte. Sie umfasst ein Backoffice für das Lagerteam, eine native App für Supply Chain, Vorbereitung und Filialversorgung sowie eine native Bezahl-App für Mitarbeitende.",
+    category: "Logistik & Einzelhandel",
   },
 };
 
@@ -99,6 +117,14 @@ const projects = [
     partners: 1,
     website: "https://www.getable.io/",
     date: "2025-01-15",
+  },
+  {
+    id: 4,
+    image: "/images/totem.jpg",
+    status: "Live",
+    partners: 70,
+    website: "https://totem.co",
+    date: "2024-06-01",
   },
 ];
 
