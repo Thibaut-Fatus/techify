@@ -95,7 +95,7 @@ const FooterSection = () => {
               </li> */}
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-studio-teal mr-3" />
-                <span className="text-gray-300">info@techify.eu</span>
+                <span className="text-gray-300">info@fatus.eu</span>
               </li>
             </ul>
           </div>

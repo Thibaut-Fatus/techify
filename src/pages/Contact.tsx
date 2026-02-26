@@ -68,8 +68,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-gray-900">{t('contactEmailUs')}</h3>
-                      <a href="mailto:info@techify.eu" className="text-studio-blue hover:underline mt-2 block">
-                        info@techify.eu
+                      <a href="mailto:info@fatus.eu" className="text-studio-blue hover:underline mt-2 block">
+                        info@fatus.eu
                       </a>
                     </div>
                   </div>
