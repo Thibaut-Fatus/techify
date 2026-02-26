@@ -1,54 +1,38 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy
 
 on:
-  # Runs on pushes targeting the default branch
-
-  # UNCOMMENT THIS TO DEPLOY ON GITHUB PAGES
-  # AND PUT BACK /techify/ in vite config, assets paths (images) and basename in router
-  # push:
-  #   branches: ['main']
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  push:
+    branches: [main]
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
-      - name: Install dependencies
-        run: npm ci
-      - name: Build
-        run: npm run build
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Install s3cmd
+        run: sudo apt-get install -y s3cmd
+
+      - name: Install Scaleway CLI
+        uses: scaleway/action-scw@v0
         with:
-          # Upload dist folder
-          path: "./dist"
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          version: v2.37.0
+
+      - name: Deploy to Object Storage
+        run: |
+          scw object config get type=s3cmd region=fr-par > ~/.s3cfg
+          s3cmd --no-mime-magic --guess-mime-type --acl-public sync --delete-removed ./dist/ s3://techify.fatus.eu/
+        env:
+          SCW_ACCESS_KEY: ${{ secrets.SCW_ACCESS_KEY }}
+          SCW_SECRET_KEY: ${{ secrets.SCW_SECRET_KEY }}
+          SCW_DEFAULT_PROJECT_ID: ${{ secrets.SCW_DEFAULT_PROJECT_ID }}
+          SCW_DEFAULT_ORGANIZATION_ID: ${{ secrets.SCW_DEFAULT_ORGANIZATION_ID }}
+          SCW_DEFAULT_REGION: fr-par
