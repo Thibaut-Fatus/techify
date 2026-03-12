@@ -20,7 +20,7 @@ const HeroSection = () => {
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
 
-          <main className="pt-10 mx-auto max-w-7xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 lg:px-8 xl:pt-28">
+          <main className="pt-20 mx-auto max-w-7xl px-4 sm:pt-24 sm:px-6 md:pt-28 lg:pt-20 lg:px-8 xl:pt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">{t('heroTitle1')}</span>{" "}
