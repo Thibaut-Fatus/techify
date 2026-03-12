@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/LanguageContext";
 import { getProjects } from "@/translations/projects";
+import { Link } from "react-router-dom";
 
 const ProjectsSection = () => {
   const { t, currentLanguage } = useLanguage();
@@ -64,9 +65,11 @@ const ProjectsSection = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <Button size="lg" className="bg-studio-blue hover:bg-studio-teal">
-            {t('viewAllProjects')}
-          </Button>
+          <Link to="/projects">
+            <Button size="lg" className="bg-studio-blue hover:bg-studio-teal">
+              {t('viewAllProjects')}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

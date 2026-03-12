@@ -31,14 +31,18 @@ const HeroSection = () => {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <Button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-studio-blue hover:bg-studio-teal md:py-4 md:text-lg md:px-10">
-                    {t('submitProject')}
-                  </Button>
+                  <a href="#submit">
+                    <Button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-studio-blue hover:bg-studio-teal md:py-4 md:text-lg md:px-10">
+                      {t('submitProject')}
+                    </Button>
+                  </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Button variant="outline" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-studio-blue bg-white hover:bg-studio-teal hover:text-white md:py-4 md:text-lg md:px-10">
-                    {t('learnMore')}
-                  </Button>
+                  <a href="#how-it-works">
+                    <Button variant="outline" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-studio-blue bg-white hover:bg-studio-teal hover:text-white md:py-4 md:text-lg md:px-10">
+                      {t('learnMore')}
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>

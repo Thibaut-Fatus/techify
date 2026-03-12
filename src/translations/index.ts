@@ -325,7 +325,7 @@ const en: Translations = {
   submissionTitle: "Submit Your Challenge",
   submissionSubtitle:
     "You know your business better than anyone. Tell us what tool or process you wish you had — no technical expertise needed. If selected, we'll use AI to build it fast and affordably, and share the revenue when others benefit from it too.",
-  submissionFormTitle: "Challenge Submission Form",
+  submissionFormTitle: "We'd Love to Hear About Your Idea",
   submissionFormSubtitle:
     "Tell us about your business and the problem you'd like solved.",
   submissionFormBusinessName: "Business Name",
@@ -533,7 +533,7 @@ const fr: Translations = {
   submissionTitle: "Soumettez Votre Projet",
   submissionSubtitle:
     "Vous connaissez votre entreprise mieux que personne. Dites-nous quel outil ou processus vous aimeriez avoir — aucune expertise technique requise. Si sélectionné, nous utiliserons l'IA pour le construire rapidement et à moindre coût, et partagerons les revenus quand d'autres en bénéficieront aussi.",
-  submissionFormTitle: "Formulaire de Soumission",
+  submissionFormTitle: "Parlez-nous de votre idée",
   submissionFormSubtitle:
     "Parlez-nous de votre entreprise et du problème que vous souhaitez résoudre.",
   submissionFormBusinessName: "Nom de l'Entreprise",
@@ -740,7 +740,7 @@ const de: Translations = {
   submissionTitle: "Herausforderung Einreichen",
   submissionSubtitle:
     "Sie kennen Ihr Unternehmen am besten. Sagen Sie uns, welches Tool oder welchen Prozess Sie sich wünschen — kein technisches Fachwissen nötig. Bei Auswahl nutzen wir KI, um es schnell und günstig zu bauen, und teilen die Einnahmen, wenn auch andere davon profitieren.",
-  submissionFormTitle: "Herausforderungs-Einreichungsformular",
+  submissionFormTitle: "Erzählen Sie uns von Ihrer Idee",
   submissionFormSubtitle:
     "Erzählen Sie uns von Ihrem Unternehmen und dem Problem, das Sie lösen möchten.",
   submissionFormBusinessName: "Firmenname",

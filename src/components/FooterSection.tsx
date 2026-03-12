@@ -71,7 +71,7 @@ const FooterSection = () => {
                 </a>
               </li> */}
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-white">
+                <Link to="/#submit" className="text-gray-300 hover:text-white">
                   {t("footerSubmit")}
                 </Link>
               </li>

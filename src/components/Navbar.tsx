@@ -87,7 +87,7 @@ const Navbar = () => {
             {/* <Button variant="ghost" className="text-studio-blue hover:text-studio-teal">
               {t('login')}
             </Button> */}
-            <Link to="/contact">
+            <Link to="/#submit">
               <Button className="ml-8 bg-studio-blue hover:bg-studio-teal">
                 {t("submitProject")}
               </Button>
@@ -197,7 +197,7 @@ const Navbar = () => {
                 >
                   {t("login")}
                 </Button>
-                <Link to="/contact" className="w-full">
+                <Link to="/#submit" className="w-full" onClick={() => setIsMenuOpen(false)}>
                   <Button className="w-full bg-studio-blue hover:bg-studio-teal">
                     {t("submitProject")}
                   </Button>

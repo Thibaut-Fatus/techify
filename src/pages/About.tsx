@@ -3,6 +3,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const { t } = useLanguage();
@@ -97,12 +98,16 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-6">{t('joinUsTitle')}</h2>
               <p className="text-xl mb-8">{t('joinUsContent')}</p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Button size="lg" className="bg-studio-teal hover:bg-teal-600">
-                  {t('submitProject')}
-                </Button>
-                <Button size="lg" variant="outline" className="text-slate-800 hover:text-white border-white hover:bg-white/20">
-                  {t('contactUs')}
-                </Button>
+                <Link to="/#submit">
+                  <Button size="lg" className="bg-studio-teal hover:bg-teal-600">
+                    {t('submitProject')}
+                  </Button>
+                </Link>
+                <a href="mailto:info@fatus.eu">
+                  <Button size="lg" variant="outline" className="text-slate-800 hover:text-white border-white hover:bg-white/20">
+                    {t('contactUs')}
+                  </Button>
+                </a>
               </div>
             </div>
 
