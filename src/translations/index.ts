@@ -138,8 +138,18 @@ export interface Translations {
   submissionFormBusinessIndustryPlaceholder: string;
   submissionFormBusinessDescription: string;
   submissionFormBusinessDescriptionPlaceholder: string;
+  submissionFormRevenue: string;
+  submissionFormRevenuePlaceholder: string;
+  submissionFormDistribution: string;
+  submissionFormDistributionPlaceholder: string;
   submissionButton: string;
   submissionSubmitting: string;
+  submissionMailSubject: string;
+  submissionMailGreeting: string;
+  submissionMailProjectSection: string;
+  submissionMailGoalSection: string;
+  submissionMailRevenueSection: string;
+  submissionMailDistributionSection: string;
   submissionFeedback: string;
   submissionFeedbackMessage: string;
   submissionPolicy: string;
@@ -329,8 +339,20 @@ const en: Translations = {
   submissionFormBusinessDescription: "Describe your challenge",
   submissionFormBusinessDescriptionPlaceholder:
     "Tell us about the problem you're facing and how it impacts your business...",
+  submissionFormRevenue: "Financial Aspects / Revenue Projection",
+  submissionFormRevenuePlaceholder:
+    "Share your thoughts on the business model, expected revenue, pricing strategy...",
+  submissionFormDistribution: "Distribution",
+  submissionFormDistributionPlaceholder:
+    "How do you envision the solution being distributed? Target markets, channels, scaling strategy...",
   submissionButton: "Submit Challenge",
   submissionSubmitting: "Submitting...",
+  submissionMailSubject: "New Project Submission",
+  submissionMailGreeting: "Hi Techify team!",
+  submissionMailProjectSection: "INFORMATION",
+  submissionMailGoalSection: "PROJECT",
+  submissionMailRevenueSection: "FINANCIAL ASPECTS / REVENUE PROJECTION",
+  submissionMailDistributionSection: "DISTRIBUTION",
   submissionFeedback: "Project Submitted!",
   submissionFeedbackMessage:
     "We'll review your challenge and get back to you within 3 business days.",
@@ -525,8 +547,20 @@ const fr: Translations = {
   submissionFormBusinessDescription: "Décrivez votre projet",
   submissionFormBusinessDescriptionPlaceholder:
     "Parlez-nous du problème que vous rencontrez et de son impact sur votre entreprise...",
+  submissionFormRevenue: "Aspects Financiers / Projection de Revenus",
+  submissionFormRevenuePlaceholder:
+    "Partagez vos réflexions sur le modèle économique, les revenus attendus, la stratégie de prix...",
+  submissionFormDistribution: "Distribution",
+  submissionFormDistributionPlaceholder:
+    "Comment envisagez-vous la distribution de la solution ? Marchés cibles, canaux, stratégie de déploiement...",
   submissionButton: "Soumettre le Projet",
   submissionSubmitting: "Soumission en cours...",
+  submissionMailSubject: "Nouvelle Soumission de Projet",
+  submissionMailGreeting: "Bonjour l'équipe Techify !",
+  submissionMailProjectSection: "INFORMATIONS",
+  submissionMailGoalSection: "PROJET",
+  submissionMailRevenueSection: "ASPECTS FINANCIERS / PROJECTION DE REVENUS",
+  submissionMailDistributionSection: "DISTRIBUTION",
   submissionFeedback: "Projet Soumis !",
   submissionFeedbackMessage:
     "Nous examinerons votre projet et vous recontacterons sous 3 jours ouvrés.",
@@ -720,8 +754,20 @@ const de: Translations = {
   submissionFormBusinessDescription: "Beschreiben Sie Ihre Herausforderung",
   submissionFormBusinessDescriptionPlaceholder:
     "Erzählen Sie uns von dem Problem, dem Sie gegenüberstehen, und wie es Ihr Unternehmen beeinflusst...",
+  submissionFormRevenue: "Finanzielle Aspekte / Umsatzprognose",
+  submissionFormRevenuePlaceholder:
+    "Teilen Sie Ihre Gedanken zum Geschäftsmodell, erwarteten Umsätzen, Preisstrategie...",
+  submissionFormDistribution: "Vertrieb",
+  submissionFormDistributionPlaceholder:
+    "Wie stellen Sie sich den Vertrieb der Lösung vor? Zielmärkte, Kanäle, Skalierungsstrategie...",
   submissionButton: "Herausforderung Einreichen",
   submissionSubmitting: "Wird eingereicht...",
+  submissionMailSubject: "Neue Projekteinreichung",
+  submissionMailGreeting: "Hallo Techify-Team!",
+  submissionMailProjectSection: "INFORMATIONEN",
+  submissionMailGoalSection: "PROJEKT",
+  submissionMailRevenueSection: "FINANZIELLE ASPEKTE / UMSATZPROGNOSE",
+  submissionMailDistributionSection: "VERTRIEB",
   submissionFeedback: "Projekt Eingereicht!",
   submissionFeedbackMessage:
     "Wir werden Ihre Herausforderung prüfen und uns innerhalb von 3 Werktagen bei Ihnen melden.",

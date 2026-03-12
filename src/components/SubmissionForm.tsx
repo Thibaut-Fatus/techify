@@ -23,9 +23,9 @@ const SubmissionForm = () => {
     email: "",
     industry: "",
     challengeDescription: "",
+    revenueProjection: "",
+    distribution: "",
   });
-
-  const [loading, setLoading] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -36,23 +36,40 @@ const SubmissionForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      toast({
-        title: t("submissionFeedback"),
-        description: t("submissionFeedbackMessage"),
-      });
-      setLoading(false);
-      setFormData({
-        businessName: "",
-        contactName: "",
-        email: "",
-        industry: "",
-        challengeDescription: "",
-      });
-    }, 1500);
+    const subject = encodeURIComponent(
+      `${t("submissionMailSubject")} — ${formData.businessName}`
+    );
+
+    const body = encodeURIComponent(
+      `${t("submissionMailGreeting")}
+
+---
+
+${t("submissionMailProjectSection")}
+• ${t("submissionFormBusinessName")}: ${formData.businessName}
+• ${t("submissionFormBusinessContact")}: ${formData.contactName}
+• ${t("submissionFormBusinessEmail")}: ${formData.email}
+• ${t("submissionFormBusinessIndustry")}: ${formData.industry}
+
+${t("submissionMailGoalSection")}
+${formData.challengeDescription}
+
+${t("submissionMailRevenueSection")}
+${formData.revenueProjection}
+
+${t("submissionMailDistributionSection")}
+${formData.distribution}
+
+---`
+    );
+
+    window.location.href = `mailto:info@fatus.eu?subject=${subject}&body=${body}`;
+
+    toast({
+      title: t("submissionFeedback"),
+      description: t("submissionFeedbackMessage"),
+    });
   };
 
   return (
@@ -150,12 +167,40 @@ const SubmissionForm = () => {
                 />
               </div>
 
+              <div className="mt-4 space-y-2">
+                <Label htmlFor="revenueProjection">
+                  {t("submissionFormRevenue")}
+                </Label>
+                <Textarea
+                  id="revenueProjection"
+                  name="revenueProjection"
+                  placeholder={t("submissionFormRevenuePlaceholder")}
+                  rows={3}
+                  value={formData.revenueProjection}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div className="mt-4 space-y-2">
+                <Label htmlFor="distribution">
+                  {t("submissionFormDistribution")}
+                </Label>
+                <Textarea
+                  id="distribution"
+                  name="distribution"
+                  placeholder={t("submissionFormDistributionPlaceholder")}
+                  rows={3}
+                  value={formData.distribution}
+                  onChange={handleChange}
+                />
+              </div>
+
               <Button
                 type="submit"
                 className="mt-6 w-full bg-studio-blue hover:bg-studio-teal"
-                disabled={loading}
+                disabled={!formData.businessName || !formData.contactName || !formData.email || !formData.industry || !formData.challengeDescription}
               >
-                {loading ? t("submissionSubmitting") : t("submissionButton")}
+                {t("submissionButton")}
               </Button>
             </form>
           </CardContent>
