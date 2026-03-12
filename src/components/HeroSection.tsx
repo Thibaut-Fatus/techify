@@ -1,66 +1,77 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const HeroSection = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="relative bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <svg
-            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
+    <div className="relative min-h-[90vh] flex items-center overflow-hidden bg-white">
+      {/* Background effects */}
+      <div className="absolute inset-0 mesh-gradient" />
+      <div className="absolute inset-0 grid-pattern" />
 
-          <main className="pt-20 mx-auto max-w-7xl px-4 sm:pt-24 sm:px-6 md:pt-28 lg:pt-20 lg:px-8 xl:pt-28">
-            <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">{t('heroTitle1')}</span>{" "}
-                <span className="block text-studio-blue xl:inline">{t('heroTitle2')}</span>
-              </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                {t('heroSubtitle')}
-              </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
-                  <a href="#submit">
-                    <Button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-studio-blue hover:bg-studio-teal md:py-4 md:text-lg md:px-10">
-                      {t('submitProject')}
-                    </Button>
-                  </a>
-                </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a href="#how-it-works">
-                    <Button variant="outline" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-studio-blue bg-white hover:bg-studio-teal hover:text-white md:py-4 md:text-lg md:px-10">
-                      {t('learnMore')}
-                    </Button>
-                  </a>
-                </div>
-              </div>
+      {/* Floating gradient orbs */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 glow rounded-full animate-pulse-soft" />
+      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 glow rounded-full animate-pulse-soft" style={{ animationDelay: '2s' }} />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-100 mb-8 animate-fade-in">
+            <div className="h-2 w-2 rounded-full bg-indigo-500 animate-pulse" />
+            <span className="text-sm font-medium text-indigo-700">
+              European Tech Platform
+            </span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-gray-900 leading-[1.1] animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            {t('heroTitle1')}{" "}
+            <span className="gradient-text">{t('heroTitle2')}</span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="mt-6 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            {t('heroSubtitle')}
+          </p>
+
+          {/* CTAs */}
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <a href="#submit">
+              <Button size="lg" className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl px-8 h-12 text-base gap-2 shadow-lg shadow-gray-900/10">
+                {t('submitProject')}
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            </a>
+            <a href="#how-it-works">
+              <Button variant="outline" size="lg" className="rounded-xl px-8 h-12 text-base border-gray-200 hover:bg-gray-50 text-gray-700">
+                {t('learnMore')}
+              </Button>
+            </a>
+          </div>
+
+          {/* Stats row */}
+          <div className="mt-20 grid grid-cols-3 gap-8 max-w-lg mx-auto animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">10+</div>
+              <div className="text-sm text-gray-500 mt-1">Projects</div>
             </div>
-          </main>
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">3</div>
+              <div className="text-sm text-gray-500 mt-1">EU Countries</div>
+            </div>
+            <div>
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">100%</div>
+              <div className="text-sm text-gray-500 mt-1">EU Hosted</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
-          alt="Person working on laptop"
-        />
-      </div>
-      <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-4">
-        <a href="#how-it-works" className="animate-bounce bg-white p-2 w-10 h-10 ring-1 ring-slate-200 shadow-lg rounded-full flex items-center justify-center">
-          <ArrowDown className="w-6 h-6 text-studio-blue" />
-        </a>
-      </div>
+
+      {/* Bottom fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
     </div>
   );
 };

@@ -1,18 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/context/LanguageContext";
+import { ArrowRight } from "lucide-react";
 
 const SubmissionForm = () => {
   const { toast } = useToast();
@@ -73,26 +66,28 @@ ${formData.distribution}
   };
 
   return (
-    <section
-      id="submit"
-      className="bg-gradient-to-b from-white to-gray-50 py-16 md:py-24"
-    >
-      <div className="section-container">
-        <div className="text-center max-w-3xl mx-auto">
+    <section id="submit" className="relative">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-indigo-50/30 to-white" />
+
+      <div className="relative section-container">
+        <div className="text-center mb-12">
+          <p className="text-sm font-semibold text-indigo-600 tracking-wide uppercase mb-3">Get Started</p>
           <h2 className="section-title">{t("submissionTitle")}</h2>
           <p className="section-subtitle">{t("submissionSubtitle")}</p>
         </div>
 
-        <Card className="max-w-2xl mx-auto mt-10 border shadow-lg">
-          <CardHeader>
-            <CardTitle>{t("submissionFormTitle")}</CardTitle>
-            <CardDescription>{t("submissionFormSubtitle")}</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <form onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-xl shadow-gray-200/50 p-8 md:p-10">
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-gray-900">{t("submissionFormTitle")}</h3>
+              <p className="text-sm text-gray-500 mt-1">{t("submissionFormSubtitle")}</p>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <div className="space-y-2">
-                  <Label htmlFor="businessName">
+                  <Label htmlFor="businessName" className="text-sm font-medium text-gray-700">
                     {t("submissionFormBusinessName")}
                   </Label>
                   <Input
@@ -102,10 +97,11 @@ ${formData.distribution}
                     value={formData.businessName}
                     onChange={handleChange}
                     required
+                    className="rounded-xl border-gray-200 focus:border-indigo-300 focus:ring-indigo-200"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="contactName">
+                  <Label htmlFor="contactName" className="text-sm font-medium text-gray-700">
                     {t("submissionFormBusinessContact")}
                   </Label>
                   <Input
@@ -115,13 +111,14 @@ ${formData.distribution}
                     value={formData.contactName}
                     onChange={handleChange}
                     required
+                    className="rounded-xl border-gray-200 focus:border-indigo-300 focus:ring-indigo-200"
                   />
                 </div>
               </div>
 
-              <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 <div className="space-y-2">
-                  <Label htmlFor="email">
+                  <Label htmlFor="email" className="text-sm font-medium text-gray-700">
                     {t("submissionFormBusinessEmail")}
                   </Label>
                   <Input
@@ -132,10 +129,11 @@ ${formData.distribution}
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    className="rounded-xl border-gray-200 focus:border-indigo-300 focus:ring-indigo-200"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="industry">
+                  <Label htmlFor="industry" className="text-sm font-medium text-gray-700">
                     {t("submissionFormBusinessIndustry")}
                   </Label>
                   <Input
@@ -146,29 +144,29 @@ ${formData.distribution}
                     value={formData.industry}
                     onChange={handleChange}
                     required
+                    className="rounded-xl border-gray-200 focus:border-indigo-300 focus:ring-indigo-200"
                   />
                 </div>
               </div>
 
-              <div className="mt-4 space-y-2">
-                <Label htmlFor="challengeDescription">
+              <div className="space-y-2">
+                <Label htmlFor="challengeDescription" className="text-sm font-medium text-gray-700">
                   {t("submissionFormBusinessDescription")}
                 </Label>
                 <Textarea
                   id="challengeDescription"
                   name="challengeDescription"
-                  placeholder={t(
-                    "submissionFormBusinessDescriptionPlaceholder"
-                  )}
-                  rows={5}
+                  placeholder={t("submissionFormBusinessDescriptionPlaceholder")}
+                  rows={4}
                   value={formData.challengeDescription}
                   onChange={handleChange}
                   required
+                  className="rounded-xl border-gray-200 focus:border-indigo-300 focus:ring-indigo-200 resize-none"
                 />
               </div>
 
-              <div className="mt-4 space-y-2">
-                <Label htmlFor="revenueProjection">
+              <div className="space-y-2">
+                <Label htmlFor="revenueProjection" className="text-sm font-medium text-gray-700">
                   {t("submissionFormRevenue")}
                 </Label>
                 <Textarea
@@ -178,11 +176,12 @@ ${formData.distribution}
                   rows={3}
                   value={formData.revenueProjection}
                   onChange={handleChange}
+                  className="rounded-xl border-gray-200 focus:border-indigo-300 focus:ring-indigo-200 resize-none"
                 />
               </div>
 
-              <div className="mt-4 space-y-2">
-                <Label htmlFor="distribution">
+              <div className="space-y-2">
+                <Label htmlFor="distribution" className="text-sm font-medium text-gray-700">
                   {t("submissionFormDistribution")}
                 </Label>
                 <Textarea
@@ -192,23 +191,26 @@ ${formData.distribution}
                   rows={3}
                   value={formData.distribution}
                   onChange={handleChange}
+                  className="rounded-xl border-gray-200 focus:border-indigo-300 focus:ring-indigo-200 resize-none"
                 />
               </div>
 
               <Button
                 type="submit"
-                className="mt-6 w-full bg-studio-blue hover:bg-studio-teal"
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white rounded-xl h-12 text-base gap-2"
                 disabled={!formData.businessName || !formData.contactName || !formData.email || !formData.industry || !formData.challengeDescription}
               >
                 {t("submissionButton")}
+                <ArrowRight className="h-4 w-4" />
               </Button>
             </form>
-          </CardContent>
-          <CardFooter className="flex flex-col space-y-2 text-sm text-gray-500">
-            <p className="text-center">{t("submissionPolicy")}</p>
-            <p className="text-center">{t("submissionPrivacy")}</p>
-          </CardFooter>
-        </Card>
+
+            <div className="mt-6 pt-6 border-t border-gray-100 space-y-1">
+              <p className="text-xs text-gray-400 text-center">{t("submissionPolicy")}</p>
+              <p className="text-xs text-gray-400 text-center">{t("submissionPrivacy")}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import LanguageSelector from "./LanguageSelector";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -10,199 +10,119 @@ const Navbar = () => {
   const { t } = useLanguage();
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
-            <Link to="/">
-              <span className="sr-only">Techify</span>
-              <h1 className="text-2xl font-bold text-studio-navy">
-                Tec<span className="text-studio-blue">h</span>ify
-              </h1>
-            </Link>
-          </div>
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <div className="mx-4 mt-4">
+        <div className="max-w-7xl mx-auto bg-white/80 backdrop-blur-xl rounded-2xl border border-gray-200/50 shadow-sm">
+          <div className="flex justify-between items-center px-6 py-3">
+            <div className="flex justify-start lg:w-0 lg:flex-1">
+              <Link to="/" className="flex items-center gap-2">
+                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-indigo-600 to-violet-600 flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">T</span>
+                </div>
+                <span className="text-lg font-semibold text-gray-900">
+                  Techify
+                </span>
+              </Link>
+            </div>
 
-          <div className="-mr-2 -my-2 md:hidden">
-            <Button
-              variant="ghost"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="rounded-md p-2 inline-flex items-center justify-center"
-            >
-              <span className="sr-only">Open menu</span>
-              {isMenuOpen ? (
-                <X className="h-6 w-6" aria-hidden="true" />
-              ) : (
-                <Menu className="h-6 w-6" aria-hidden="true" />
-              )}
-            </Button>
-          </div>
-
-          <nav className="hidden md:flex space-x-10">
-            <Link
-              to="/"
-              className="text-base font-medium text-gray-700 hover:text-studio-blue"
-            >
-              {t("home")}
-            </Link>
-            <Link
-              to="/about"
-              className="text-base font-medium text-gray-700 hover:text-studio-blue"
-            >
-              {t("navAbout")}
-            </Link>
-            <Link
-              to="/projects"
-              className="text-base font-medium text-gray-700 hover:text-studio-blue"
-            >
-              {t("navProjects")}
-            </Link>
-            {/* <a
-              href="/#how-it-works"
-              className="text-base font-medium text-gray-700 hover:text-studio-blue"
-            >
-              {t("navHowItWorks")}
-            </a>
-            <a
-              href="/#benefits"
-              className="text-base font-medium text-gray-700 hover:text-studio-blue"
-            >
-              {t("navBenefits")}
-            </a>
-            <a
-              href="/#faq"
-              className="text-base font-medium text-gray-700 hover:text-studio-blue"
-            >
-              {t("navFaq")}
-            </a> */}
-            <Link
-              to="/contact"
-              className="text-base font-medium text-gray-700 hover:text-studio-blue"
-            >
-              Contact
-            </Link>
-          </nav>
-
-          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <LanguageSelector />
-            {/* <Button variant="ghost" className="text-studio-blue hover:text-studio-teal">
-              {t('login')}
-            </Button> */}
-            <Link to="/#submit">
-              <Button className="ml-8 bg-studio-blue hover:bg-studio-teal">
-                {t("submitProject")}
+            <div className="-mr-2 -my-2 md:hidden">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="rounded-xl"
+              >
+                <span className="sr-only">Open menu</span>
+                {isMenuOpen ? (
+                  <X className="h-5 w-5" aria-hidden="true" />
+                ) : (
+                  <Menu className="h-5 w-5" aria-hidden="true" />
+                )}
               </Button>
-            </Link>
+            </div>
+
+            <nav className="hidden md:flex items-center gap-1">
+              <Link
+                to="/"
+                className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/50 transition-colors"
+              >
+                {t("home")}
+              </Link>
+              <Link
+                to="/about"
+                className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/50 transition-colors"
+              >
+                {t("navAbout")}
+              </Link>
+              <Link
+                to="/projects"
+                className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/50 transition-colors"
+              >
+                {t("navProjects")}
+              </Link>
+              <Link
+                to="/contact"
+                className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/50 transition-colors"
+              >
+                Contact
+              </Link>
+            </nav>
+
+            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0 gap-3">
+              <LanguageSelector />
+              <Link to="/#submit">
+                <Button size="sm" className="bg-gray-900 hover:bg-gray-800 text-white rounded-xl px-4 gap-2 text-sm">
+                  {t("submitProject")}
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-            <div className="pt-5 pb-6 px-5">
-              <div className="flex items-center justify-between">
-                <div>
-                  <h1 className="text-xl font-bold text-studio-navy">
-                    Tec<span className="text-studio-teal">h</span>ify
-                  </h1>
-                </div>
-                <div className="-mr-2">
-                  <Button
-                    variant="ghost"
-                    onClick={() => setIsMenuOpen(false)}
-                    className="rounded-md p-2 inline-flex items-center justify-center"
-                  >
-                    <span className="sr-only">Close menu</span>
-                    <X className="h-6 w-6" aria-hidden="true" />
-                  </Button>
-                </div>
-              </div>
-              <div className="mt-6">
-                <nav className="grid gap-y-8">
-                  <Link
-                    to="/"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="text-base font-medium text-gray-700">
-                      Home
-                    </span>
-                  </Link>
-                  <Link
-                    to="/about"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="text-base font-medium text-gray-700">
-                      {t("navAbout")}
-                    </span>
-                  </Link>
-                  <Link
-                    to="/projects"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="text-base font-medium text-gray-700">
-                      {t("navProjects")}
-                    </span>
-                  </Link>
-                  <a
-                    href="/#how-it-works"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="text-base font-medium text-gray-700">
-                      {t("navHowItWorks")}
-                    </span>
-                  </a>
-                  <a
-                    href="/#benefits"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="text-base font-medium text-gray-700">
-                      {t("navBenefits")}
-                    </span>
-                  </a>
-                  <a
-                    href="/#faq"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="text-base font-medium text-gray-700">
-                      {t("navFaq")}
-                    </span>
-                  </a>
-                  <Link
-                    to="/contact"
-                    className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    <span className="text-base font-medium text-gray-700">
-                      Contact
-                    </span>
-                  </Link>
-                </nav>
-              </div>
-            </div>
-            <div className="py-6 px-5 space-y-6">
-              <div className="flex items-center mb-4">
-                <LanguageSelector />
-              </div>
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <Button
-                  variant="ghost"
-                  className="text-studio-blue hover:text-studio-teal justify-center"
-                >
-                  {t("login")}
+        <div className="mx-4 mt-2 md:hidden">
+          <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-gray-200/50 shadow-lg p-6">
+            <nav className="flex flex-col gap-1">
+              <Link
+                to="/"
+                className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-50 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t("home")}
+              </Link>
+              <Link
+                to="/about"
+                className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-50 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t("navAbout")}
+              </Link>
+              <Link
+                to="/projects"
+                className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-50 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t("navProjects")}
+              </Link>
+              <Link
+                to="/contact"
+                className="px-4 py-3 text-sm font-medium text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-50 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </nav>
+            <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-3">
+              <LanguageSelector />
+              <Link to="/#submit" className="flex-1" onClick={() => setIsMenuOpen(false)}>
+                <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white rounded-xl gap-2">
+                  {t("submitProject")}
+                  <ArrowRight className="h-4 w-4" />
                 </Button>
-                <Link to="/#submit" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                  <Button className="w-full bg-studio-blue hover:bg-studio-teal">
-                    {t("submitProject")}
-                  </Button>
-                </Link>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
 
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/context/LanguageContext";
 import { getProjects } from "@/translations/projects";
 import { Link } from "react-router-dom";
+import { ArrowRight, ExternalLink } from "lucide-react";
 
 const ProjectsSection = () => {
   const { t, currentLanguage } = useLanguage();
@@ -13,61 +13,75 @@ const ProjectsSection = () => {
   const firstThreeProjects = [p1,p2,p3];
 
   return (
-    <section id="projects" className="bg-gray-50 py-16 md:py-24">
+    <section id="projects" className="relative bg-gray-50/50">
       <div className="section-container">
-        <div className="text-center">
+        <div className="text-center mb-16">
+          <p className="text-sm font-semibold text-indigo-600 tracking-wide uppercase mb-3">Portfolio</p>
           <h2 className="section-title">{t('featuredProjects')}</h2>
           <p className="section-subtitle">
             {t('featuredProjectsSubtitle')}
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {firstThreeProjects.filter(p => !!p).map((project, index) => (
-            <Card key={index} className="overflow-hidden flex flex-col h-full border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="h-48 overflow-hidden">
+            <div
+              key={index}
+              className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:border-gray-200 hover:shadow-lg transition-all duration-300 flex flex-col h-full"
+            >
+              <div className="h-48 overflow-hidden relative">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-              </div>
-              <CardHeader>
-                <div className="flex justify-between items-center">
-                  <Badge variant="outline" className="bg-studio-cream text-studio-navy">
-                    {project.category}
-                  </Badge>
-                  <Badge className={
-                    project.status === "Live" ? "bg-green-500" :
+                <div className="absolute top-3 right-3">
+                  <Badge className={`
+                    ${project.status === "Live" ? "bg-emerald-500" :
                     project.status === "Beta" ? "bg-amber-500" :
-                    "bg-blue-500"
-                  }>
+                    "bg-indigo-500"} text-white border-0 shadow-sm
+                  `}>
                     {project.status}
                   </Badge>
                 </div>
-                <CardTitle className="text-xl mt-2">{project.title}</CardTitle>
-                <CardDescription className="text-sm text-gray-600">
+              </div>
+
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+                    {project.category}
+                  </span>
+                </div>
+
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{project.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed flex-grow">
                   {project.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-sm text-gray-500">
-                  <span className="font-medium text-studio-blue">{project.partners}</span> small businesses partnered
                 </p>
-              </CardContent>
-              <CardFooter>
-                <a className="font-medium w-full" href={project.website} target="_blank" rel="noopener noreferrer">
-                  {project.website}
-                </a>
-              </CardFooter>
-            </Card>
+
+                <div className="mt-4 pt-4 border-t border-gray-50 flex items-center justify-between">
+                  <span className="text-sm text-gray-400">
+                    <span className="font-medium text-gray-600">{project.partners}</span> partners
+                  </span>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-indigo-600 hover:text-indigo-700 transition-colors"
+                  >
+                    Visit
+                    <ExternalLink className="h-3.5 w-3.5" />
+                  </a>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
 
         <div className="mt-12 text-center">
           <Link to="/projects">
-            <Button size="lg" className="bg-studio-blue hover:bg-studio-teal">
+            <Button variant="outline" size="lg" className="rounded-xl px-8 gap-2 border-gray-200 hover:bg-gray-50 text-gray-700">
               {t('viewAllProjects')}
+              <ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
         </div>
